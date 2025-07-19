@@ -81,7 +81,7 @@
         <field name="view_mode">tree,form,kanban</field>
     </record>
 
-    <menuitem id="menu_mercado_pago_root" name="Mercado Pago"/>
+    <menuitem id="menu_mercado_pago_root" name="Datos Prospeccion"/>
     <menuitem id="menu_mercado_pago_bid" name="Bids" parent="menu_mercado_pago_root" action="action_mercado_pago_bid"/>
     <record id="view_mercado_pago_custom_field_tree" model="ir.ui.view">
         <field name="name">mercado.pago.custom.field.tree</field>
