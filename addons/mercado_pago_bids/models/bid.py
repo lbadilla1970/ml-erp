@@ -29,4 +29,7 @@ class MercadoPagoBid(models.Model):
         ('perdida', 'Perdida'),
     ], string='Estado', default='revisar')
 
+    def _group_expand_estado(self, states, domain, orderby, access_rights_uid=None, limit=None):
+        return [key for key, _ in type(self).estado.selection]
+
     custom_value_ids = fields.One2many('mercado_pago.custom.value', 'bid_id', string='Custom Values')
