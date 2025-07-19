@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_mercado_pago_bid,mercado_pago.bid,model_mercado_pago_bid,,1,1,1,1
+access_mercado_pago_custom_field,mercado_pago.custom.field,model_mercado_pago_custom_field,,1,1,1,1
+access_mercado_pago_custom_value,mercado_pago.custom.value,model_mercado_pago_custom_value,,1,1,1,1
