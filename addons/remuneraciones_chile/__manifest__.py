@@ -7,7 +7,6 @@
     "description": "Gestión de remuneraciones para Chile",
     "data": [
         "security/ir.model.access.csv",
-        "views/menus.xml",
         "views/afp_views.xml",
         "views/isapre_views.xml",
         "views/tabla_impuesto_views.xml",
@@ -17,6 +16,7 @@
         "views/empresa_views.xml",
         "views/unidad_views.xml",
         "views/cargo_views.xml",
+        "views/menus.xml",
     ],
     "installable": True,
     "application": True,
