@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <menuitem id="menu_remuneraciones_root" name="Remuneraciones" sequence="10"/>
+
+    <menuitem id="menu_remuneraciones_tablas_base" name="Tablas base" parent="menu_remuneraciones_root" sequence="10"/>
+    <menuitem id="menu_remuneraciones_organizacion" name="Organización" parent="menu_remuneraciones_root" sequence="20"/>
+
+    <!-- Tablas base menus -->
+    <menuitem id="menu_afp" name="AFP" parent="menu_remuneraciones_tablas_base" action="action_afp"/>
+    <menuitem id="menu_isapre" name="Isapres" parent="menu_remuneraciones_tablas_base" action="action_isapre"/>
+    <menuitem id="menu_tabla_impuesto" name="Tabla de Impuestos" parent="menu_remuneraciones_tablas_base" action="action_tabla_impuesto"/>
+    <menuitem id="menu_parametros_mes" name="Parámetros del Mes" parent="menu_remuneraciones_tablas_base" action="action_parametros_mes"/>
+    <menuitem id="menu_haber" name="Haberes" parent="menu_remuneraciones_tablas_base" action="action_haber"/>
+    <menuitem id="menu_descuento" name="Descuentos" parent="menu_remuneraciones_tablas_base" action="action_descuento"/>
+
+    <!-- Organización menus -->
+    <menuitem id="menu_empresa" name="Empresas" parent="menu_remuneraciones_organizacion" action="action_empresa"/>
+    <menuitem id="menu_unidad" name="Unidades" parent="menu_remuneraciones_organizacion" action="action_unidad"/>
+    <menuitem id="menu_cargo" name="Cargos" parent="menu_remuneraciones_organizacion" action="action_cargo"/>
+</odoo>

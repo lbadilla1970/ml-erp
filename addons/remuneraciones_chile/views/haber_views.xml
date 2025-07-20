@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_haber_tree" model="ir.ui.view">
+        <field name="name">haber.tree</field>
+        <field name="model">haber.haber</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="tipo"/>
+                <field name="afecta_prevision"/>
+                <field name="afecta_sueldo_liquido"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_haber_form" model="ir.ui.view">
+        <field name="name">haber.form</field>
+        <field name="model">haber.haber</field>
+        <field name="arch" type="xml">
+            <form string="Haber">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="tipo"/>
+                        <field name="afecta_prevision"/>
+                        <field name="afecta_sueldo_liquido"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_haber" model="ir.actions.act_window">
+        <field name="name">Haberes</field>
+        <field name="res_model">haber.haber</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

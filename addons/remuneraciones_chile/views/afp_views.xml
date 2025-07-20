@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_afp_tree" model="ir.ui.view">
+        <field name="name">afp.tree</field>
+        <field name="model">afp.afp</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="tasa_afp"/>
+                <field name="tasa_sis"/>
+                <field name="tasa_apv"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_afp_form" model="ir.ui.view">
+        <field name="name">afp.form</field>
+        <field name="model">afp.afp</field>
+        <field name="arch" type="xml">
+            <form string="AFP">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="tasa_afp"/>
+                        <field name="tasa_sis"/>
+                        <field name="tasa_apv"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_afp" model="ir.actions.act_window">
+        <field name="name">AFP</field>
+        <field name="res_model">afp.afp</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_afp,afp.afp,model_afp_afp,,1,1,1,1
+access_isapre,isapre.isapre,model_isapre_isapre,,1,1,1,1
+access_tabla_impuesto,tabla.impuesto,model_tabla_impuesto,,1,1,1,1
+access_parametros_mes,parametros.mes,model_parametros_mes,,1,1,1,1
+access_haber,haber.haber,model_haber_haber,,1,1,1,1
+access_descuento,descuento.descuento,model_descuento_descuento,,1,1,1,1
+access_empresa,organizacion.empresa,model_organizacion_empresa,,1,1,1,1
+access_unidad,organizacion.unidad,model_organizacion_unidad,,1,1,1,1
+access_cargo,organizacion.cargo,model_organizacion_cargo,,1,1,1,1
