@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_tabla_impuesto_tree" model="ir.ui.view">
+        <field name="name">tabla.impuesto.tree</field>
+        <field name="model">tabla.impuesto</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="tramo"/>
+                <field name="desde"/>
+                <field name="hasta"/>
+                <field name="factor"/>
+                <field name="rebaja"/>
+                <field name="tasa"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_tabla_impuesto_form" model="ir.ui.view">
+        <field name="name">tabla.impuesto.form</field>
+        <field name="model">tabla.impuesto</field>
+        <field name="arch" type="xml">
+            <form string="Tabla Impuesto">
+                <sheet>
+                    <group>
+                        <field name="tramo"/>
+                        <field name="desde"/>
+                        <field name="hasta"/>
+                        <field name="factor"/>
+                        <field name="rebaja"/>
+                        <field name="tasa"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_tabla_impuesto" model="ir.actions.act_window">
+        <field name="name">Tabla de Impuestos</field>
+        <field name="res_model">tabla.impuesto</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

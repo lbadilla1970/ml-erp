@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_isapre_tree" model="ir.ui.view">
+        <field name="name">isapre.tree</field>
+        <field name="model">isapre.isapre</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="valor_plan_base"/>
+                <field name="tipo_cobro"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_isapre_form" model="ir.ui.view">
+        <field name="name">isapre.form</field>
+        <field name="model">isapre.isapre</field>
+        <field name="arch" type="xml">
+            <form string="Isapre">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="valor_plan_base"/>
+                        <field name="tipo_cobro"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_isapre" model="ir.actions.act_window">
+        <field name="name">Isapres</field>
+        <field name="res_model">isapre.isapre</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
