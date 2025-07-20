@@ -1,7 +1,7 @@
 {
     "name": "Remuneraciones Chile",
     "version": "1.0",
-    "depends": ["base"],
+    "depends": ["base", "mail"],
     "author": "Auto Generated",
     "category": "Human Resources",
     "description": "Gestión de remuneraciones para Chile",
