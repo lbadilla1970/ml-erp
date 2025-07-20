@@ -81,8 +81,10 @@
         <field name="view_mode">tree,form,kanban</field>
     </record>
 
-    <menuitem id="menu_mercado_pago_root" name="Datos Prospeccion"/>
-    <menuitem id="menu_mercado_pago_bid" name="Bids" parent="menu_mercado_pago_root" action="action_mercado_pago_bid"/>
+    <menuitem id="menu_datos_root" name="Datos"/>
+    <menuitem id="menu_mercado_publico" name="Mercado Publico" parent="menu_datos_root" action="action_mercado_pago_bid"/>
+    <menuitem id="menu_sea" name="SEA" parent="menu_datos_root"/>
+    <menuitem id="menu_municipalidades" name="Municipalidades" parent="menu_datos_root"/>
     <record id="view_mercado_pago_custom_field_tree" model="ir.ui.view">
         <field name="name">mercado.pago.custom.field.tree</field>
         <field name="model">mercado_pago.custom.field</field>
@@ -113,5 +115,5 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem id="menu_mercado_pago_custom_field" name="Custom Fields" parent="menu_mercado_pago_root" action="action_mercado_pago_custom_field"/>
+    <menuitem id="menu_mercado_pago_custom_field" name="Custom Fields" parent="menu_datos_root" action="action_mercado_pago_custom_field"/>
 </odoo>
